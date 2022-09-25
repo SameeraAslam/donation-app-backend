@@ -137,6 +137,7 @@ app.get("/api/getdonation", async (req, res) => {
 // })
 
 //
-app.listen(1337, () => {
+
+app.listen(process.env.PORT || 1337, () => {
   console.log("app is running on port 1337");
 });
